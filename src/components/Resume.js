@@ -7,6 +7,7 @@ const Resume = () => {
       <a
         className="big-link"
         href={ResumeDownload}
+        download={"Benjamin_Bernstein_Resume"}
         target="_blank"
         rel="noreferrer"
       >
