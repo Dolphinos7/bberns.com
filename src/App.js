@@ -1,35 +1,20 @@
-import Header from "./components/Header";
-import ButtonMenu from "./components/ButtonMenu"
-import Resume from "./components/Resume"
-import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import CloudComputing from "./pages/CloudComputing";
+import RydeSafe from "./pages/RydeSafe";
 
 
-
-
-const App = () => {
-  const [showResume, setShowResume] = useState(false);
-
-  const resumeDisplay = () => {
-    if (showResume){
-      setShowResume(false)
-    }
-    else{
-      setShowResume(true)
-    }
-  }
-
-  let buttonText = showResume ? "Hide Resume" : "Show Resume"
-
+function App() {
   return (
-    <div className='text'>
-      <Header />  
-      <ButtonMenu resumeButton={resumeDisplay} buttonText={buttonText}/>
-      {showResume && <Resume/>}
-
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/CloudComputing" element={<CloudComputing />} />
+        <Route path="/RydeSafe" element={<RydeSafe />} />
+      </Routes>
+    </Router>
   );
-};
-
-
+}
 
 export default App;

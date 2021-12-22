@@ -7,21 +7,25 @@ const ProjectButton = ({ project }) => {
         </a> */}
         <h4>{project.name}</h4>
         <h6>{project.description}</h6>
-        {/* <button type="button" className="project-sub-button">
-          About
-        </button> */}
-        <button
-          type="button"
-          className="project-sub-button"
-          onClick={(e) => {
-            e.stopPropagation();
-            window.open(project.link, "_blank");
-          }}
+        <form
+          action={project.route}
         >
-          Visit
-        </button>
+          <button type="submit" className="project-sub-button">
+            About
+          </button>
+          <button
+            type="button"
+            className="project-sub-button"
+            onClick={(e) => {
+              e.stopPropagation();
+              window.open(project.link, "_blank");
+            }}
+          >
+            Visit
+          </button>
+        </form>
       </div>
-      <br/>
+      <br />
     </>
   );
 };
