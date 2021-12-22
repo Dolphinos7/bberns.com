@@ -6,8 +6,8 @@ const ButtonMenu = (props) => {
   let projectText = showProjectMenu ? "Hide Projects" : "Show Projects";
 
   return (
-    <div className="row" style={{ marginTop: "20px" }}>
-      <div className="col" align="right">
+    <div style={{ marginTop: "20px" }}>
+      <div className="col-12" align="center">
         <button
           className="button"
           type="button"
@@ -16,7 +16,7 @@ const ButtonMenu = (props) => {
           {projectText}
         </button>
       </div>
-      <div className="col" align="left">
+      <div className="col-12" align="center">
         <button className="button" type="button" onClick={props.resumeButton}>
           {props.resumeText}
         </button>

@@ -7,9 +7,7 @@ const ProjectButton = ({ project }) => {
         </a> */}
         <h4>{project.name}</h4>
         <h6>{project.description}</h6>
-        <form
-          action={project.route}
-        >
+        <form action={project.route}>
           <button type="submit" className="project-sub-button">
             About
           </button>

@@ -42,12 +42,15 @@ const ProjectMenu = () => {
       route: "/VibeCheck",
     },
   ];
+
   return (
-    <div className="col-12" align="center">
-      {projects.map((aProject) => {
-        return <ProjectButton key={aProject.id} project={aProject} />;
-      })}
-    </div>
+    <>
+      <div className="col-12" align="center">
+        {projects.map((aProject) => {
+          return <ProjectButton key={aProject.id} project={aProject} />;
+        })}
+      </div>
+    </>
   );
 };
 
