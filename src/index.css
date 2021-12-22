@@ -1,13 +1,117 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.centered {
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.centered-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
+
+.background {
+  background-color: rgb(34, 38, 38);
+}
+
+.text {
+  color: rgb(205, 209, 204);
+}
+
+.text-highlight {
+  color: rgb(10, 179, 119);
+}
+
+a:hover {
+  color: rgb(10, 179, 119);
+}
+
+a:link {
+  color: rgb(10, 179, 119);
+}
+
+a:active {
+  color: rgb(10, 179, 119);
+}
+
+a:visited {
+  color: rgb(10, 179, 119);
+}
+
+.button {
+  background-color: rgb(10, 179, 119);
+  border: none;
+  color: rgb(225, 225, 225);
+  padding: 32px 0px;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-left: 20px;
+  border-radius: 15px;
+}
+
+.project-button {
+  background-color: rgb(50, 54, 54);
+  border: none;
+  color: rgb(225, 225, 225);
+  padding: 16px 0px;
+  width: 400px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.project-sub-button {
+  background-color: rgb(10, 179, 119);
+  border: none;
+  color: rgb(225, 225, 225);
+  padding: 8px 0px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 100px;
+}
+
+/* button#cloud{
+  background: url(assets/java.png);
+  background-size: 200px 200px;
+  background-position: 0px -20px;
+} */
+
+.big-link {
+  text-align: center;
+  text-decoration: none;
+  font-size: 32px;
+}
+
+.div-link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  z-index: 1;
+
+  /* fixes overlap error in IE7/8, 
+       make sure you have an empty gif */
+  /* background-image: url("empty.gif"); */
+}
+
+/* Green: 10, 179, 119
+Background: 34, 38, 38
+Text: 205, 209, 204
+Containers: 110, 110, 110
+Red: 212, 66, 64 */

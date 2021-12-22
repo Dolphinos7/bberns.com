@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import ButtonMenu from "./components/ButtonMenu"
+import Resume from "./components/Resume"
+import { useState } from "react";
 
-function App() {
+
+
+
+const App = () => {
+  const [showResume, setShowResume] = useState(false);
+
+  const resumeDisplay = () => {
+    if (showResume){
+      setShowResume(false)
+    }
+    else{
+      setShowResume(true)
+    }
+  }
+
+  let buttonText = showResume ? "Hide Resume" : "Show Resume"
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='text'>
+      <Header />  
+      <ButtonMenu resumeButton={resumeDisplay} buttonText={buttonText}/>
+      {showResume && <Resume/>}
+
     </div>
   );
-}
+};
+
+
 
 export default App;
