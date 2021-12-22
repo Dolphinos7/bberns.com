@@ -1,4 +1,3 @@
-import ResumeDownload from "../assets/resume.pdf";
 import ResumeImage from "../assets/resume.png";
 
 const Resume = () => {
@@ -6,7 +5,9 @@ const Resume = () => {
     <div className="container col-md-6 centered">
       <a
         className="big-link"
-        href={ResumeDownload}
+        href={
+          "https://github.com/Dolphinos7/bberns.com/raw/master/src/assets/resume.pdf"
+        }
         download={"Benjamin_Bernstein_Resume"}
         target="_blank"
         rel="noreferrer"
