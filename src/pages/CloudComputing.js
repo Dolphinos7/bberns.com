@@ -39,6 +39,12 @@ const CloudComputing = () => {
           <img className="centered-image" src={TechStack} alt="tech stack" />
         </p>
       </div>
+      <div className="my-container">
+        <h1>APIs</h1>
+        <p style={{ textAlign: "left", marginLeft: "10px" }}>
+          Lots of google maps stuff. Will write more later
+        </p>
+      </div>
       <LinkButton text="Home" link="/" />
     </div>
   );
