@@ -59,7 +59,7 @@ a:visited {
   border: none;
   color: rgb(225, 225, 225);
   padding: 16px 0px;
-  width: 400px;
+  width: 350px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -74,15 +74,10 @@ a:visited {
   background-color: rgb(50, 54, 54);
   border: none;
   color: rgb(225, 225, 225);
-  padding: 16px 0px;
-  width: 100%;
   text-align: center;
-  text-decoration: none;
   display: inline-block;
   font-size: 24px;
   margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
   border-radius: 10px;
 }
 
@@ -141,3 +136,8 @@ Background: 34, 38, 38
 Text: 205, 209, 204
 Containers: 110, 110, 110
 Red: 212, 66, 64 */
+
+.border{
+  border: 2px;
+  border-color: red;
+}

@@ -16,13 +16,12 @@ const Home = () => {
 
   let resumeText = showResume ? "Hide Resume" : "Show Resume";
 
-
   return (
-      <div className="text">
-        <Header />
-        <ButtonMenu resumeButton={resumeDisplay} resumeText={resumeText} />
-        {showResume && <Resume />}
-      </div>
+    <div className="container col-12 text">
+      <Header />
+      <ButtonMenu resumeButton={resumeDisplay} resumeText={resumeText} />
+      {showResume && <Resume />}
+    </div>
   );
 };
 

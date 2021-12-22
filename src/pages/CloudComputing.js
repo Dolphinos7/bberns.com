@@ -14,7 +14,7 @@ const CloudComputing = () => {
         Cloud Computing Project
       </a>
       &nbsp;
-      <div className="my-container">
+      <div className="col-12 my-container" align="center">
         <h1>Overview</h1>
         <p style={{ textAlign: "left", marginLeft: "10px" }}>
           The final project of the cloud computing course at Virginia Tech is to
@@ -25,7 +25,7 @@ const CloudComputing = () => {
           ticket for.
         </p>
       </div>
-      <div className="my-container">
+      <div className="col-12 my-container" align="center">
         <h1>Tech Stack</h1>
         <p style={{ textAlign: "left", marginLeft: "10px" }}>
           The event organizer, as well as various other projects for the class
@@ -39,7 +39,7 @@ const CloudComputing = () => {
           <img className="centered-image" src={TechStack} alt="tech stack" />
         </p>
       </div>
-      <div className="my-container">
+      <div className="col-12 my-container" align="center">
         <h1>APIs</h1>
         <p style={{ textAlign: "left", marginLeft: "10px" }}>
           Lots of google maps stuff. Will write more later

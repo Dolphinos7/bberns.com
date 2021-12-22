@@ -2,7 +2,7 @@ import ProfilePicture from "../assets/profile.jpg";
 
 const Header = () => {
   return (
-    <div className="text-center">
+    <div className="col-12" align="center">
       <img className="profile-picture" src={ProfilePicture} alt="profile" />
       <h1>Benjamin Bernstein</h1>
       <a

@@ -6,17 +6,21 @@ const ButtonMenu = (props) => {
   let projectText = showProjectMenu ? "Hide Projects" : "Show Projects";
 
   return (
-    <div className="text-center" style={{ marginTop: "20px" }}>
-      <button
-        className="button"
-        type="button"
-        onClick={() => setShowProjectMenu(!showProjectMenu)}
-      >
-        {projectText}
-      </button>
-      <button className="button" type="button" onClick={props.resumeButton}>
-        {props.resumeText}
-      </button>
+    <div className="row" style={{ marginTop: "20px" }}>
+      <div className="col" align="right">
+        <button
+          className="button"
+          type="button"
+          onClick={() => setShowProjectMenu(!showProjectMenu)}
+        >
+          {projectText}
+        </button>
+      </div>
+      <div className="col" align="left">
+        <button className="button" type="button" onClick={props.resumeButton}>
+          {props.resumeText}
+        </button>
+      </div>
       {showProjectMenu && <ProjectMenu isActive={showProjectMenu} />}
     </div>
   );
