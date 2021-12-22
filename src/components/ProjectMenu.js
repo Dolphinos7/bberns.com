@@ -36,7 +36,7 @@ const ProjectMenu = () => {
     },
   ];
   return (
-    <div>
+    <div className="text-center">
       {projects.map((aProject) => {
         return <ProjectButton key={aProject.id} project={aProject} />;
       })}

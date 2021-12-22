@@ -6,7 +6,8 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 98%;
+  text-align: center;
 }
 
 .background {
@@ -48,8 +49,8 @@ a:visited {
   display: inline-block;
   font-size: 24px;
   margin-bottom: 20px;
-  margin-left: 20px;
-  margin-left: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   border-radius: 15px;
 }
 
@@ -59,6 +60,22 @@ a:visited {
   color: rgb(225, 225, 225);
   padding: 16px 0px;
   width: 400px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.my-container {
+  background-color: rgb(50, 54, 54);
+  border: none;
+  color: rgb(225, 225, 225);
+  padding: 16px 0px;
+  width: 100%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -93,7 +110,9 @@ a:visited {
 .big-link {
   text-align: center;
   text-decoration: none;
-  font-size: 32px;
+  font-size: 24px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .div-link {
@@ -108,6 +127,13 @@ a:visited {
   /* fixes overlap error in IE7/8, 
        make sure you have an empty gif */
   /* background-image: url("empty.gif"); */
+}
+
+.profile-picture {
+  margin-top: 20px;
+  border-radius: 100%;
+  width: 125px;
+  height: 125px;
 }
 
 /* Green: 10, 179, 119
